@@ -1,20 +1,14 @@
-// Get the button element by its ID
-const btn = document.getElementById("btn") as HTMLButtonElement;
-
-// Add a click event listener to the button
-btn.addEventListener("click", () => {
+function reverseNumber() {
     // Get the input value
-    const input = document.getElementById("input") as HTMLInputElement;
-    const inputValue = input.value;
+    const inputElement = document.getElementById("inputNumber") as HTMLInputElement;
+    const inputValue = inputElement.value;
 
-    // Store the input value in local storage
-    localStorage.setItem("inputValue", inputValue);
+    // Reverse the number
+    const reversedValue = parseInt(inputValue.toString().split('').reverse().join(''));
 
-    // List the local storage items on the webpage
-    const localStorageItems = Object.entries(localStorage);
-    localStorageItems.forEach(([key, value]) => {
-        console.log(`${key}: ${value}`);
-    });
-});
-
-
+    // Display the result
+    const resultElement = document.getElementById("result");
+    if (resultElement) {
+        resultElement.textContent = `Reversed Number: ${reversedValue}`;
+    }
+}

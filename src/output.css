@@ -544,10 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -560,21 +556,13 @@ video {
   justify-content: center;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .border-2 {
   border-width: 2px;
 }
 
-.border-gray-400 {
+.border-rose-500 {
   --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
-}
-
-.p-2 {
-  padding: 0.5rem;
+  border-color: rgb(244 63 94 / var(--tw-border-opacity));
 }
 
 .p-6 {
