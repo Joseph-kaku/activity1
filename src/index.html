@@ -7,14 +7,22 @@
     <title>TailwindCss TypeScript</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1 class="flex justify-center items-center p-6"> JK </h1>
+    </header>
     <main>
-        <h1 class="bg-red-600"> JK </h1>
+        <div class="flex justify-center items-center ">
+            <input type="text" id="input" class="border-2 border-gray-400 rounded-lg p-2 m-2" placeholder="Enter your name">
+            <button id="btn" class="border-2 border-gray-400 rounded-lg p-2 m-2">Submit</button>
+        </div>
+        <div class="flex justify-center items-center">
+            <p id="output" class="border-2 border-gray-400 rounded-lg p-2 m-2"></p>
+        </div>
     </main>
-    <footer>
-        <p id="test">test</p>
+    <footer class="flex justify-center">
+        <p id="foot">&copy; 2024</p>
     </footer>
-    <script src="output.js"></script>
+    <script src="input.js"></script>
 </body>
 </html>
 
