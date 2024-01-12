@@ -6,17 +6,17 @@
     <link href="output.css" rel="stylesheet">
     <title>TailwindCss TypeScript</title>
 </head>
-<body>
+<body class="p-6 h-100 w-100 flex flex-col items-center" >
     <header>
-        <h1 class="flex justify-center items-center p-6"> JK </h1>
+        <h1 class="flex justify-center items-center p-6 font-bold text-4xl"> JK </h1>
     </header>
-    <main class="p-6 h-12 w-10" >
+    <main class="card ">
         <h1 class="flex justify-center">Number Reversal</h1>
 
         <div class="flex flex-col justify-center" >
         <label for="inputNumber">Enter a Number: </label>
-        <input class="border-2 border-rose-500" type="number" id="inputNumber" />
-        <button onclick="reverseNumber()"> Reverse </button>
+        <input class="border-2 border-cyan-500 rounded" type="number" id="inputNumber" />
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onclick="reverseNumber()"> Reverse </button>
         </div>
     
     <p class="flex justify-center" id="result"></p>
